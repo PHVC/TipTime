@@ -12,7 +12,7 @@
         android:id="@+id/cost_of_service"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:hint="Cost of Service"
+        android:hint="@string/cost_of_service"
         android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="18dp"
-        android:text="How was the service?"
+        android:text="@string/how_was_the_service"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,8 +41,7 @@
             android:id="@+id/very_nice_radio_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
-            android:text="Very Nice (20%)"
+            android:text="@string/very_nice_20"
             android:textColor="@color/black"
             android:textSize="16sp"
             tools:ignore="OnClick" />
@@ -51,8 +50,7 @@
             android:id="@+id/good_radio_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
-            android:text="Good (15%)"
+            android:text="@string/good_15"
             android:textColor="@color/black"
             android:textSize="16sp"
             tools:ignore="OnClick" />
@@ -61,8 +59,7 @@
             android:id="@+id/normal_radio_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
-            android:text="Normal (10%)"
+            android:text="@string/normal_10"
             android:textColor="@color/black"
             android:textSize="16sp"
             tools:ignore="OnClick" />
@@ -74,7 +71,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:checked="true"
-        android:text="Round up tip?"
+        android:text="@string/round_up_tip"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tip_options"
@@ -84,7 +81,7 @@
         android:id="@+id/calculate_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Calculate"
+        android:text="@string/calculate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/round_up_switch" />
@@ -93,7 +90,7 @@
         android:id="@+id/tip_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tip Amount"
+        tools:text="Tip Amount: $10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/calculate_button" />
 
