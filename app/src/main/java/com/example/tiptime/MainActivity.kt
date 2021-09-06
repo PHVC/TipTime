@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = com.example.tiptime.databinding.ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.calculateButton.setOnClickListener { calculateTip() }
